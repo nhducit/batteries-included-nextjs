@@ -1,0 +1,81 @@
+{
+  "name": "with-tailwindcss",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "PORT=7007 node server.js",
+    "build-nextjs": "yarn build:bsb && USE_PREACT=true next build",
+    "export": "next export",
+    "build": "yarn build-nextjs && yarn export",
+    "serve": "serve -p 7777 out",
+    "build-without-preact": "yarn build:bsb && next build",
+    "start": "PORT=7007 USE_PREACT=true next start",
+    "test": "jest",
+    "format": "prettier --write 'src/**/*.{ts,tsx,js}' --config .prettierrc",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "lint-bk": "tsc -p tsconfig.json --noEmit && eslint --ext js,ts,tsx src",
+    "analyze": "ANALYZE=true yarn build",
+    "build:bsb": "bsb -make-world -clean-world && yarn format",
+    "watch:bsb": "bsb -make-world -clean-world -w",
+    "clean:bsb": "bsb -clean-world"
+  },
+  "dependencies": {
+    "@next/bundle-analyzer": "9.2.1",
+    "fp-ts": "2.4.4",
+    "gentype": "3.12.0",
+    "io-ts": "2.1.0",
+    "io-ts-reporters": "1.0.0",
+    "js-cookie": "2.2.1",
+    "module-alias": "2.2.2",
+    "next": "9.2.1",
+    "next-seo": "4.1.0",
+    "next-transpile-modules": "3.0.2",
+    "preact": "10.3.1",
+    "preact-render-to-string": "5.1.4",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "react-react": "1.2.0",
+    "reason-react": "0.7.0",
+    "swr": "0.1.16"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "2.0.6",
+    "@glennsl/bs-json": "5.0.2",
+    "@sentry/integrations": "5.12.0",
+    "@sentry/node": "5.12.3",
+    "@testing-library/react": "9.4.0",
+    "@types/jest": "25.1.2",
+    "@types/node": "13.7.1",
+    "@types/react": "16.9.19",
+    "@zeit/next-source-maps": "0.0.3",
+    "babel-jest": "25.1.0",
+    "babel-plugin-inline-react-svg": "1.1.1",
+    "bs-platform": "7.1.0",
+    "eslint": "6.8.0",
+    "husky": "4.2.2",
+    "jest": "25.1.0",
+    "lint-staged": "10.0.7",
+    "organize-imports-cli": "0.7.0",
+    "postcss-preset-env": "6.7.0",
+    "prettier": "1.19.1",
+    "serve": "11.3.0",
+    "source-map-explorer": "2.2.2",
+    "tailwindcss": "1.2.0",
+    "typescript": "3.7.5"
+  },
+  "lint-staged": {
+    "*.{js,json,md,css}": [
+      "prettier --write"
+    ],
+    "*.{ts,tsx}": [
+      "organize-imports-cli",
+      "prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint && lint-staged"
+    }
+  },
+  "resolutions": {}
+}

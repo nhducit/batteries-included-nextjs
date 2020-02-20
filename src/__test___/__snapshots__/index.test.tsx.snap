@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With React Testing Library Snapshot Should match Snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <nav>
+      <ul
+        class="flex justify-between items-center p-8"
+      >
+        <li>
+          <a
+            class="text-blue-500 no-underline"
+            href="/"
+          >
+            Home
+          </a>
+        </li>
+        <ul
+          class="flex justify-between items-center"
+        >
+          <li
+            class="ml-4"
+          >
+            <a
+              class="btn-blue no-underline"
+              href="https://github.com/zeit/next.js"
+            >
+              GitHub
+            </a>
+          </li>
+          <li
+            class="ml-4"
+          >
+            <a
+              class="btn-blue no-underline"
+              href="https://nextjs.org/docs"
+            >
+              Docs
+            </a>
+          </li>
+        </ul>
+      </ul>
+    </nav>
+    <div
+      class="hero"
+    >
+      <h1
+        class="title"
+      >
+        Battery included Next.js
+      </h1>
+      <p>
+        env SECRET
+        <strong />
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;

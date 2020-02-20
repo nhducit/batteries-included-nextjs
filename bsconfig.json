@@ -1,0 +1,36 @@
+{
+  "gentypeconfig": {
+    "language": "typescript",
+    "module": "es6",
+    "importPath": "relative",
+    "shims": {
+      "React": "ReactShim",
+      "ReactEvent": "ReactEvent",
+      "ReasonPervasives": "ReasonPervasives",
+      "ReasonReact": "ReactShim",
+      "Js": "Js"
+    },
+    "debug": {
+      "all": false
+    },
+    "exportInterfaces": false
+  },
+  "name": "bi-nextjs",
+  "bsc-flags": ["-bs-super-errors"],
+  "reason": { "react-jsx": 3 },
+  "bs-dependencies": ["reason-react", "@glennsl/bs-json"],
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ],
+  "package-specs": {
+    "module": "es6",
+    "in-source": true
+  },
+  "suffix": ".bs.js",
+  "namespace": true,
+  "ppx-flags": [],
+  "refmt": 3
+}

@@ -1,0 +1,15 @@
+version: '3'
+services:
+  bi-nextjs:
+    build:
+      context: .
+      dockerfile: Dockerfile-dev
+    image: ducnh/bi-nextjs
+    container_name: bi-nextjs
+    volumes:
+      - ./:/usr/src/bi-nextjs:z
+    ports:
+      - '7007:7007'
+    environment:
+      - NODE_ENV=development
+      - API_ENV=development
