@@ -165,8 +165,8 @@ Workflow:
 
 Other ways to decode json with reasonml which I have not tried yet:
 
-- https://github.com/jaredly/milk: looks interesting which project schema migration but I am not sure does the complexity worth it
+- https://github.com/jaredly/milk: looks interesting which have schema migration but I am not sure whether the complexity worth it
 - https://github.com/mattjbray/ocaml-decoders: Elm-inspired decoders for Ocaml
 - https://github.com/reasonml-labs/decco: looks promising, generate decoder/encoder from user-defined types
-- https://github.com/ahrefs/atd: require write the type definition in a specific format and this file will be used to generate decoders/encoders
+- https://github.com/ahrefs/atd: require write the type definition in a specific format and the library will generate decoders/encoders base on this file
   Example repo: https://github.com/ahrefs/atdgen-workshop-starter/
