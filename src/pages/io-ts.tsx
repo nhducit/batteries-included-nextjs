@@ -11,10 +11,10 @@ const User = t.type({
 export default () => {
   React.useEffect(() => {
     decodeJson(User, { name: 'duc' })
-      .then(result => {
+      .then((result) => {
         console.log('result', result)
       })
-      .catch(error => {
+      .catch((error) => {
         console.log('error', error)
       })
   }, [])

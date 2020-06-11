@@ -15,11 +15,11 @@ export function decodeJson<Type, OutPut, Input>(
     pipe(
       result,
       fold(
-        errors => {
+        (errors) => {
           const messages = reporter(result)
           reject(new Error(messages.join('\n')))
         },
-        value => resolve(value),
+        (value) => resolve(value),
       ),
     )
   })

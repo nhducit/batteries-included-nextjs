@@ -18,6 +18,3 @@ export type user = { readonly userId: string; readonly name: string }
 
 export const Decoders_users: (json: Js_Json_t) => user[] =
   decodeBS.Decoders.users
-
-export const Decoders: { users: (json: Js_Json_t) => user[] } =
-  decodeBS.Decoders

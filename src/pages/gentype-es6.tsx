@@ -1,11 +1,11 @@
 import { NextSeo } from 'next-seo'
 import * as React from 'react'
 import Nav from '../components/nav'
-import { Decoders } from '../jsonDecoders/decode.gen'
+import { Decoders_users } from '../jsonDecoders/decode.gen'
 
 export default () => {
   React.useEffect(() => {
-    Decoders.users({ name: 'duc' })
+    Decoders_users({ name: 'duc' })
   }, [])
   return (
     <div>

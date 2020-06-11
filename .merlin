@@ -1,15 +1,14 @@
 ####{BSB GENERATED: NO EDIT
 B lib/bs
 FLG -open BiNextjs
-FLG -ppx '/Users/duc/Documents/whiteMouse/react-template/node_modules/bs-platform/lib/bsppx.exe -bs-jsx 3'
-S /Users/duc/Documents/whiteMouse/react-template/node_modules/bs-platform/lib/ocaml
-B /Users/duc/Documents/whiteMouse/react-template/node_modules/bs-platform/lib/ocaml
-FLG -nostdlib
-FLG -w +a-4-9-40-41-42-50-102
-S /Users/duc/Documents/whiteMouse/react-template/node_modules/reason-react/lib/ocaml
-B /Users/duc/Documents/whiteMouse/react-template/node_modules/reason-react/lib/ocaml
-S /Users/duc/Documents/whiteMouse/react-template/node_modules/@glennsl/bs-json/lib/ocaml
-B /Users/duc/Documents/whiteMouse/react-template/node_modules/@glennsl/bs-json/lib/ocaml
+FLG -ppx '/Users/ducnguyen/Documents/private/battery-included-nextjs/node_modules/bs-platform/darwin/bsc.exe -as-ppx -bs-jsx 3'
+S /Users/ducnguyen/Documents/private/battery-included-nextjs/node_modules/bs-platform/lib/ocaml
+B /Users/ducnguyen/Documents/private/battery-included-nextjs/node_modules/bs-platform/lib/ocaml
+FLG -w +a-4-9-20-40-41-42-50-61-102
+S /Users/ducnguyen/Documents/private/battery-included-nextjs/node_modules/reason-react/lib/ocaml
+B /Users/ducnguyen/Documents/private/battery-included-nextjs/node_modules/reason-react/lib/ocaml
+S /Users/ducnguyen/Documents/private/battery-included-nextjs/node_modules/@glennsl/bs-json/lib/ocaml
+B /Users/ducnguyen/Documents/private/battery-included-nextjs/node_modules/@glennsl/bs-json/lib/ocaml
 S src/jsonDecoders
 B lib/bs/src/jsonDecoders
 ####BSB GENERATED: NO EDIT}
