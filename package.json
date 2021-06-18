@@ -55,7 +55,7 @@
     "module-alias": "2.2.2",
     "next-transpile-modules": "4.1.0",
     "organize-imports-cli": "0.8.0",
-    "postcss": "^8.1.10",
+    "postcss": "^8.2.10",
     "postcss-preset-env": "6.7.0",
     "preact-render-to-string": "5.1.12",
     "prettier": "2.2.0",
