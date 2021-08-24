@@ -21,5 +21,10 @@
     "**/*.test.ts",
     "**/*.test.tsx"
   ],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/gentype-es6.tsx.test"
+  ]
 }

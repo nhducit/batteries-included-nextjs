@@ -10,7 +10,7 @@ export default function Index() {
         description="Battery Included Next.js template"
       />
       <Nav />
-      <div className="hero">
+      <div className="">
         <h1 className="title">Battery included Next.js</h1>
         <p></p>
       </div>
