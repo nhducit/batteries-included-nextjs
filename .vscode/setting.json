@@ -1,0 +1,23 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "firsttris.vscode-jest-runner",
+    "dbaeumer.vscode-eslint",
+    "aaron-bond.better-comments",
+    "vsls-contrib.codetour",
+    "naumovs.color-highlight",
+    "dzhavat.css-flexbox-cheatsheet",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "heybourn.headwind",
+    "csstools.postcss",
+    "tabnine.tabnine-vscode",
+    "bradlc.vscode-tailwindcss",
+    "austenc.tailwind-docs",
+    "basarat.god",
+    "visualstudioexptteam.vscodeintellicode",
+    "vscode-icons-team.vscode-icons",
+    "deque-systems.vscode-axe-linter",
+    "chenglou92.rescript-vscode"
+  ]
+}

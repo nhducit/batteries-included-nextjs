@@ -1,9 +1,9 @@
 import { NextSeo } from 'next-seo'
 import * as React from 'react'
-import Nav from '../components/nav'
-import { Decoders_users } from '../jsonDecoders/decode.gen'
+import Nav from './components/nav'
+import { Decoders_users } from './jsonDecoders/decode.gen'
 
-export default () => {
+export default function GentypeEs6() {
   React.useEffect(() => {
     Decoders_users({ name: 'duc' })
   }, [])

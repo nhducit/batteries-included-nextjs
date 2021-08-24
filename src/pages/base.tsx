@@ -2,7 +2,7 @@ import { NextSeo } from 'next-seo'
 import * as React from 'react'
 import Nav from '../components/nav'
 
-export default () => {
+export default function Base() {
   return (
     <div>
       <NextSeo

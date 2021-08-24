@@ -8,7 +8,7 @@ const User = t.type({
   userId: t.number,
   name: t.string,
 })
-export default () => {
+export default function IoTs() {
   React.useEffect(() => {
     decodeJson(User, { name: 'duc' })
       .then((result) => {

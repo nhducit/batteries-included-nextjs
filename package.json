@@ -17,22 +17,23 @@
     "analyze": "ANALYZE=true yarn build",
     "build:bsb": "bsb -make-world -clean-world && yarn format",
     "watch:bsb": "bsb -make-world -clean-world -w",
-    "clean:bsb": "bsb -clean-world"
+    "clean:bsb": "bsb -clean-world",
+    "prepare": "husky install"
   },
   "dependencies": {
+    "@rescript/react": "0.10.3",
     "fp-ts": "2.11.1",
     "gentype": "4.1.0",
     "io-ts": "2.2.16",
-    "io-ts-reporters": "1.2.2",
-    "js-cookie": "2.2.1",
+    "io-ts-reporters": "2.0.0",
+    "js-cookie": "3.0.0",
     "next": "11.1.0",
-    "next-seo": "4.17.0",
+    "next-seo": "4.26.0",
     "preact": "10.5.14",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-react": "1.2.0",
-    "reason-react": "0.9.1",
-    "swr": "0.3.9"
+    "react-query": "3.21.0",
+    "rescript": "9.1.4"
   },
   "devDependencies": {
     "@glennsl/bs-json": "5.0.4",
@@ -41,27 +42,26 @@
     "@sentry/node": "6.11.0",
     "@testing-library/react": "12.0.0",
     "@types/jest": "27.0.1",
-    "@types/node": "16.6.2",
+    "@types/node": "16.7.1",
     "@types/react": "17.0.19",
     "@zeit/next-source-maps": "0.0.3",
-    "autoprefixer": "^10.0.2",
-    "babel-jest": "26.6.3",
-    "babel-plugin-inline-react-svg": "1.1.2",
-    "bs-platform": "8.3.3",
+    "autoprefixer": "10.3.2",
+    "bs-platform": "9.0.2",
     "eslint": "7.32.0",
-    "husky": "4.3.0",
-    "jest": "26.6.3",
-    "lint-staged": "10.5.2",
+    "eslint-config-next": "11.1.0",
+    "husky": "7.0.1",
+    "jest": "27.0.6",
+    "lint-staged": "11.1.2",
     "module-alias": "2.2.2",
-    "next-transpile-modules": "4.1.0",
+    "next-transpile-modules": "8.0.0",
     "organize-imports-cli": "0.8.0",
-    "postcss": "^8.2.10",
+    "postcss": "8.3.6",
     "postcss-preset-env": "6.7.0",
-    "preact-render-to-string": "5.1.12",
+    "preact-render-to-string": "5.1.19",
     "prettier": "2.3.2",
     "serve": "12.0.0",
     "source-map-explorer": "2.5.2",
-    "tailwindcss": "^2.2.7",
+    "tailwindcss": "2.2.7",
     "typescript": "4.3.5"
   },
   "lint-staged": {
@@ -72,11 +72,6 @@
       "organize-imports-cli",
       "prettier --write"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint && lint-staged"
-    }
   },
   "resolutions": {}
 }

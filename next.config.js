@@ -1,28 +1,32 @@
 // @ts-check
+const webpack = require('webpack')
 const withSourceMaps = require('@zeit/next-source-maps')
-let withTM = require('next-transpile-modules')([
-  'bs-platform',
-  '@glennsl/bs-json',
-])
+//
+const bsconfig = require('./bsconfig.json')
+const transpileModules = ['rescript', 'bs-platform'].concat(
+  bsconfig['bs-dependencies'],
+)
+
+let withTM = require('next-transpile-modules')(transpileModules)
+// let withTM = require('next-transpile-modules')([
+//   ''
+//   'bs-platform',
+//   '@glennsl/bs-json',
+// ])
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
-const webpack = require('webpack')
-withTM = true ? withTM : config => config
+if (!false) {
+  // @ts-ignore
+  withTM = function (config) {
+    return config
+  }
+}
+
 module.exports = withBundleAnalyzer(
   withSourceMaps(
     withTM({
-      webpack: function(config, { isServer, buildId }) {
-        if (process.env.USE_PREACT) {
-          config.resolve.alias = {
-            ...config.resolve.alias,
-            react: 'preact/compat',
-            react$: 'preact/compat',
-            'react-dom': 'preact/compat',
-            'react-dom$': 'preact/compat',
-          }
-        }
-
+      webpack: function (config, { isServer, buildId }) {
         config.plugins.push(
           new webpack.DefinePlugin({
             'process.env.SENTRY_RELEASE': JSON.stringify(buildId),

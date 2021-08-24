@@ -18,7 +18,7 @@
   "name": "bi-nextjs",
   "bsc-flags": ["-bs-super-errors"],
   "reason": { "react-jsx": 3 },
-  "bs-dependencies": ["reason-react", "@glennsl/bs-json"],
+  "bs-dependencies": ["@rescript/react", "@glennsl/bs-json"],
   "sources": [
     {
       "dir": "src",
