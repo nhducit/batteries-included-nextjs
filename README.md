@@ -1,4 +1,4 @@
-# Battery Included Next.js template
+# Batteries Included Next.js template
 
 Base on https://github.com/zeit/next.js/blob/canary/examples/with-tailwindcss
 
